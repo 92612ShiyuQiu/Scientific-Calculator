@@ -5,7 +5,7 @@ node{
   stage('Build'){
     //def mvnHome = tool name: 'maven', type: 'maven'
     //tool(name: 'maven', type:'maven')
-    tool name: '', type: 'maven'
+    tool name: 'maven', type: 'maven'
     sh "cd Calculator"
     sh "${mvnHome}/bin/mvn clean install"
   }

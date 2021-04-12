@@ -7,7 +7,7 @@ node{
     //tool(name: 'maven', type:'maven')
     tool name: 'maven', type: 'maven'
     sh "cd Calculator"
-    sh "mvn clean install"
+    sh "mvn -f /var/lib/jenkins/workspace/build-test-calculator/Calculator/pom.xml clean install"
     //sh "${mvnHome}/bin/mvn clean install"
   }
 }

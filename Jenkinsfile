@@ -3,11 +3,12 @@ node{
     git 'https://github.com/92612ShiyuQiu/Scientific-Calculator.git'
   }
   stage('Build'){
-    def mvnHome = tool name: 'maven', type: 'maven'
+    //def mvnHome = tool name: 'maven', type: 'maven'
     //tool(name: 'maven', type:'maven')
-    //tool name: 'maven', type: 'maven'
+    tool name: 'maven', type: 'maven'
     sh "cd Calculator"
-    sh "${mvnHome}/bin/mvn clean install"
+    sh "mvn clean install"
+    //sh "${mvnHome}/bin/mvn clean install"
   }
 }
 //pipeline {

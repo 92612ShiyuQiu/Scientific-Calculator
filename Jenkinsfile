@@ -11,6 +11,6 @@ node{
     //sh "${mvnHome}/bin/mvn clean install"
   }
   stage('Test'){
-    sh "mvn -Dtest=CalculatorSpec test"
+    sh "mvn -f /var/lib/jenkins/workspace/build-test-calculator/Calculator/pom.xml -Dtest=CalculatorSpec test"
   }
 }

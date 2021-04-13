@@ -36,6 +36,8 @@ public class Commands {
         SETMEMORY,
         SINE,
         SQUARE,
+        //cube
+        CUBE,
         SQUAREROOT,
         SUBTRACT,
         SUM,
@@ -92,6 +94,9 @@ public class Commands {
             case SQUARE:
                 calculator.square(user.isNumber);
                 break;
+            //cube
+            case CUBE:
+                calculator.cube(user.isNumber);
             case SQUAREROOT:
                 calculator.squareRoot(user.isNumber);
                 break;
